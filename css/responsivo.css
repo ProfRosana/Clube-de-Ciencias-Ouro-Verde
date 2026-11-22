@@ -288,17 +288,11 @@
             130px;
     }
 
-    /* menu continua fixo no topo no celular */
+    /* no celular o menu vira uma grade de botões (2 colunas) */
     .menu-principal {
 
         position:
-            sticky;
-    }
-
-    .menu-marca {
-
-        display:
-            none;
+            static;
     }
 
     .menu-lista {

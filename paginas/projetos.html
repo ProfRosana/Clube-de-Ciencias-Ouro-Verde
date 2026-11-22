@@ -38,10 +38,10 @@
     <!-- CSS (não alterar)
          Atenção: nas páginas da pasta "paginas" todos os
          caminhos começam com ../ (volta uma pasta). -->
-    <link rel="stylesheet" href="../css/style.css?v=16">
-    <link rel="stylesheet" href="../css/hero.css?v=16">
-    <link rel="stylesheet" href="../css/paginas.css?v=16">
-    <link rel="stylesheet" href="../css/responsivo.css?v=16">
+    <link rel="stylesheet" href="../css/style.css?v=18">
+    <link rel="stylesheet" href="../css/hero.css?v=18">
+    <link rel="stylesheet" href="../css/paginas.css?v=18">
+    <link rel="stylesheet" href="../css/responsivo.css?v=18">
 </head>
 <body>
     <!-- ======================================
@@ -105,8 +105,8 @@
 
     <!-- ======================================
          MENU FIXO (não alterar)
-         Só tem Início e Notícias. As outras páginas
-         são abertas pelos cartões da página inicial.
+         Tem todas as páginas do site. Para criar uma
+         página nova, acrescente o botão em TODAS as páginas.
     ======================================= -->
     <nav
         class="menu-principal"
@@ -123,6 +123,41 @@
                 <li>
                     <a href="../index.html">
                         Início
+                    </a>
+                </li>
+                <li>
+                    <a href="historia.html">
+                        História
+                    </a>
+                </li>
+                <li>
+                    <a href="cultura.html">
+                        Cultura
+                    </a>
+                </li>
+                <li>
+                    <a href="producao-erva-mate.html">
+                        Produção de Erva-Mate
+                    </a>
+                </li>
+                <li>
+                    <a href="producao-mudas.html">
+                        Produção de Mudas
+                    </a>
+                </li>
+                <li>
+                    <a href="formas-cultivo.html">
+                        Formas de Cultivo
+                    </a>
+                </li>
+                <li>
+                    <a href="receitas.html">
+                        Receitas
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-ativo" href="projetos.html">
+                        Projetos
                     </a>
                 </li>
                 <li>
@@ -649,6 +684,14 @@
                                 textura e pelo sabor, o que indicou a necessidade de reformular a
                                 proporção do ingrediente.
                             </p>
+                            <figure class="card-topico-foto">
+                                <img src="../imagens/projetos/cookies-assadeira.jpg" alt="Cookies com pedaços de chocolate recém-assados em uma assadeira" data-legenda="Cookies preparados pelo grupo. Foto: coordenação do Clube de Ciências Ouro Verde.">
+                                <figcaption>Cookies preparados pelo grupo. Foto: coordenação do Clube de Ciências Ouro Verde.</figcaption>
+                            </figure>
+                            <figure class="card-topico-foto">
+                                <img src="../imagens/projetos/cookies-pratos.jpg" alt="Dois pratos com cookies e pedaços de chocolate sobre a bancada" data-legenda="Cookies prontos para a avaliação. Foto: coordenação do Clube de Ciências Ouro Verde.">
+                                <figcaption>Cookies prontos para a avaliação. Foto: coordenação do Clube de Ciências Ouro Verde.</figcaption>
+                            </figure>
                             <p>
                                 Equipe: estudantes do Ensino Fundamental.
                             </p>
@@ -785,18 +828,33 @@
 
                     <!-- CARTÃO: Coleta na mata e exsicatas -->
                     <article class="card-topico">
-                        <div class="card-topico-imagem">🌿</div>
+                        <div class="card-topico-imagem">
+                            <img
+                                src="../imagens/projetos/exsicata-samambaia.jpg"
+                                alt="Folha de samambaia prensada e seca sobre uma folha de caderno com a anotação Planta nº 1"
+                                data-legenda="Exsicata de samambaia preparada pelos clubistas. Foto: coordenação do Clube de Ciências Ouro Verde."
+                            >
+                        </div>
                         <div class="card-topico-conteudo">
                             <p class="card-topico-etapa">Botânica</p>
                             <h2>
                                 Coleta na mata e exsicatas
                             </h2>
                             <div class="card-topico-texto">
-                            <p>
-                                Na mata, o Clube aprendeu a coletar amostras de plantas e a
-                                preparar exsicatas: o material é prensado, secado e montado em
-                                papel com uma etiqueta de identificação, como nos herbários.
-                            </p>
+                                <p>
+                                    Na mata, o Clube aprendeu a coletar amostras de plantas e a preparar exsicatas: o material é prensado, secado e montado em papel com uma etiqueta de identificação, como nos herbários.
+                                </p>
+                                <p>
+                                    Cada amostra recebe um número. Depois de secas, folhas, ramos, flores e frutos são organizados no papel, e os clubistas pesquisam no computador as características de cada planta para chegar à sua identificação.
+                                </p>
+                                <figure class="card-topico-foto">
+                                    <img src="../imagens/projetos/exsicata-folhas-vagens.jpg" alt="Ramos com folhas compostas e vagens escuras, secos e montados sobre folha de caderno com a anotação Planta nº 3" data-legenda="Exsicata nº 3: ramos com folhas compostas e vagens. Foto: coordenação do Clube de Ciências Ouro Verde.">
+                                    <figcaption>Exsicata nº 3: ramos com folhas compostas e vagens. Foto: coordenação do Clube de Ciências Ouro Verde.</figcaption>
+                                </figure>
+                                <figure class="card-topico-foto">
+                                    <img src="../imagens/projetos/exsicatas-montagem.jpg" alt="Mesa com notebooks e várias amostras de plantas secas sobre folhas de papel, durante a montagem das exsicatas" data-legenda="Montagem e identificação das exsicatas. Foto: coordenação do Clube de Ciências Ouro Verde.">
+                                    <figcaption>Montagem e identificação das exsicatas. Foto: coordenação do Clube de Ciências Ouro Verde.</figcaption>
+                                </figure>
                             </div>
                             <button class="card-topico-botao" type="button">
                                 Ler mais →
@@ -1269,6 +1327,6 @@
     </footer>
 
     <!-- Faz os cartões abrirem numa janela (não alterar) -->
-    <script src="../js/cartoes.js?v=16"></script>
+    <script src="../js/cartoes.js?v=18"></script>
 </body>
 </html>

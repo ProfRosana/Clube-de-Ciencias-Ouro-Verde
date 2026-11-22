@@ -663,103 +663,159 @@
     margin-bottom: 0.8rem;
 }
 
-/* =========================================================
-   FIGURAS, TABELAS E REFERÊNCIAS NO PADRÃO ABNT
-   (antes ficavam dentro de formas-cultivo.html)
-========================================================= */
-/* Formatação dos quadros/figuras internas no padrão ABNT */
+
+/* =========================================
+   TABELAS, FIGURAS E REFERÊNCIAS NO PADRÃO ABNT
+   (usados em Formas de Cultivo)
+========================================= */
+
+.card-topico-texto h4,
+.modal-texto h4 {
+    margin: 1.2rem 0 0.4rem;
+    color: var(--verde-escuro);
+}
+
 .figura-interna {
-  margin: 18px auto;
-  text-align: center;
-  page-break-inside: avoid;
-}
-
-.figura-interna figcaption.figura-titulo {
-  font-size: 0.9em;
-  margin-bottom: 6px;
-  text-align: center;
-}
-
-.figura-interna figcaption.figura-fonte {
-  font-size: 0.85em;
-  margin-top: 6px;
-  text-align: center;
+    margin: 1.2rem auto;
+    text-align: center;
 }
 
 .figura-interna img {
-  max-width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 4px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
 }
 
-/* Quadro visual de orientação para inserir a foto (substituir pela tag <img> depois) */
-.quadro-sugestao-foto {
-  border: 1.5px dashed #2e6b3e;
-  background-color: #f4f9f5;
-  color: #1b4326;
-  padding: 12px 16px;
-  margin: 0 auto;
-  max-width: 90%;
-  font-size: 0.9em;
-  line-height: 1.2;
-  text-align: left;
-  border-radius: 6px;
+.figura-titulo,
+.figura-fonte {
+    font-size: 0.85rem;
+    margin: 0.4rem 0;
 }
 
-/* Formatação da Tabela no padrão ABNT */
 .tabela-abnt-container {
-  margin: 18px auto;
-  overflow-x: auto;
+    margin: 1.2rem 0;
+    overflow-x: auto;
 }
 
-.tabela-abnt-titulo {
-  font-size: 0.9em;
-  margin-bottom: 6px;
-  text-align: left;
-  text-indent: 0 !important;
+.tabela-abnt-titulo,
+.tabela-abnt-fonte {
+    font-size: 0.85rem;
+    text-align: left;
 }
 
 .tabela-abnt {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.88em;
-  line-height: 1.1;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
 }
 
 .tabela-abnt th,
 .tabela-abnt td {
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  padding: 8px 6px;
-  text-align: left;
-  vertical-align: top;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 0.45rem 0.4rem;
+    text-align: left;
+    vertical-align: top;
 }
 
 .tabela-abnt th {
-  background-color: #eef5f0;
-  font-weight: bold;
+    background: #eef5f0;
 }
 
-.tabela-abnt-fonte {
-  font-size: 0.85em;
-  margin-top: 6px;
-  text-align: left;
-  text-indent: 0 !important;
-}
-
-/* Seção de Referências ABNT (sem recuo de parágrafo e alinhada à esquerda) */
 .referencias-abnt {
-  margin-top: 20px;
-  border-top: 1px solid #dddddd;
-  padding-top: 12px;
+    margin-top: 1.5rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #ddd;
 }
 
-.referencias-abnt p.fonte-texto {
-  text-indent: 0;
-  text-align: left;
-  font-size: 0.88em;
-  line-height: 1.05;
-  margin-bottom: 8px;
+.referencias-abnt .fonte-texto {
+    text-align: left;
+    margin-bottom: 0.6rem;
+}
+
+
+/* =========================================
+   AVISO DE IMAGEM EM PESQUISA
+   (marca onde ainda falta uma imagem)
+========================================= */
+
+.aviso-imagem {
+    margin: 1rem 0;
+    padding: 0.7rem 0.9rem;
+    border: 1.5px dashed #b8962e;
+    border-radius: 8px;
+    background: #fbf7ea;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   LINHA DO TEMPO
+   (usada em História)
+========================================= */
+
+.linha-tempo {
+    list-style: none;
+    margin: 1.2rem 0;
+    padding: 0 0 0 1.2rem;
+    border-left: 3px solid #b8962e;
+}
+
+.linha-tempo li {
+    position: relative;
+    margin: 0 0 1rem;
+    padding-left: 0.6rem;
+}
+
+.linha-tempo li::before {
+    content: "";
+    position: absolute;
+    left: -1.72rem;
+    top: 0.35rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #123d24;
+    border: 2px solid #b8962e;
+}
+
+.linha-tempo .ano {
+    display: block;
+    font-weight: 700;
+    color: #123d24;
+}
+
+.linha-tempo .cite {
+    font-size: 0.85em;
+    color: #555;
+}
+
+
+/* =========================================
+   AVISO DE REFERÊNCIA EM REVISÃO
+   e ANÚNCIOS DOS VIVEIROS
+========================================= */
+
+.aviso-referencia {
+    margin: 1rem 0;
+    padding: 0.7rem 0.9rem;
+    border-left: 4px solid #b03a2e;
+    border-radius: 6px;
+    background: #fbeeec;
+    font-size: 0.9rem;
+}
+
+.anuncio-viveiro {
+    margin: 1rem 0;
+    padding: 0.9rem 1rem;
+    border: 1px solid #cfdccf;
+    border-radius: 10px;
+    background: #f4f9f5;
+}
+
+.anuncio-viveiro h4 {
+    margin: 0 0 0.4rem;
+    color: #123d24;
 }
