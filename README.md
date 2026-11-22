@@ -19,7 +19,7 @@ Início (index.html)                 ← menu fixo: Início e Notícias
 ## Estrutura de pastas
 
 ```
-Site-do-Clube-passo-a-passo/
+Clube-de-Ciencias-Ouro-Verde/
 ├── index.html            ← página inicial (fica na raiz)
 ├── README.md             ← este arquivo
 ├── css/

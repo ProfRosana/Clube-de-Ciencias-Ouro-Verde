@@ -662,3 +662,104 @@
 .referencias .fonte-texto {
     margin-bottom: 0.8rem;
 }
+
+/* =========================================================
+   FIGURAS, TABELAS E REFERÊNCIAS NO PADRÃO ABNT
+   (antes ficavam dentro de formas-cultivo.html)
+========================================================= */
+/* Formatação dos quadros/figuras internas no padrão ABNT */
+.figura-interna {
+  margin: 18px auto;
+  text-align: center;
+  page-break-inside: avoid;
+}
+
+.figura-interna figcaption.figura-titulo {
+  font-size: 0.9em;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.figura-interna figcaption.figura-fonte {
+  font-size: 0.85em;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.figura-interna img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* Quadro visual de orientação para inserir a foto (substituir pela tag <img> depois) */
+.quadro-sugestao-foto {
+  border: 1.5px dashed #2e6b3e;
+  background-color: #f4f9f5;
+  color: #1b4326;
+  padding: 12px 16px;
+  margin: 0 auto;
+  max-width: 90%;
+  font-size: 0.9em;
+  line-height: 1.2;
+  text-align: left;
+  border-radius: 6px;
+}
+
+/* Formatação da Tabela no padrão ABNT */
+.tabela-abnt-container {
+  margin: 18px auto;
+  overflow-x: auto;
+}
+
+.tabela-abnt-titulo {
+  font-size: 0.9em;
+  margin-bottom: 6px;
+  text-align: left;
+  text-indent: 0 !important;
+}
+
+.tabela-abnt {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88em;
+  line-height: 1.1;
+}
+
+.tabela-abnt th,
+.tabela-abnt td {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  padding: 8px 6px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabela-abnt th {
+  background-color: #eef5f0;
+  font-weight: bold;
+}
+
+.tabela-abnt-fonte {
+  font-size: 0.85em;
+  margin-top: 6px;
+  text-align: left;
+  text-indent: 0 !important;
+}
+
+/* Seção de Referências ABNT (sem recuo de parágrafo e alinhada à esquerda) */
+.referencias-abnt {
+  margin-top: 20px;
+  border-top: 1px solid #dddddd;
+  padding-top: 12px;
+}
+
+.referencias-abnt p.fonte-texto {
+  text-indent: 0;
+  text-align: left;
+  font-size: 0.88em;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
